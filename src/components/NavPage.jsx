@@ -1,15 +1,15 @@
 function NavPage(props) {
   return (
-    <div>
-      <span>Pagina: {props.page}</span>
+    <section className="nav-section">
+      <span>Página: {props.page}</span>
       <button
         onClick={() => {
           props.setPage(props.page + 1);
         }}
       >
-        Siguiente pagina
+        Siguiente página
       </button>
-    </div>
+    </section>
   );
 }
 

@@ -1,8 +1,10 @@
 function Character({ character }) {
   return (
-    <article>
+    <article className="card-container">
       <h2>{character.name}</h2>
-      <img src={character.image}></img>
+      <figure className="container-image">
+        <img src={character.image}></img>
+      </figure>
     </article>
   );
 }

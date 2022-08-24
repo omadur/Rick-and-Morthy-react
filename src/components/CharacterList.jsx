@@ -19,16 +19,20 @@ function CharacterList() {
     fetchData();
   }, [page]);
   return (
-    <>
+    <div>
       <NavPage setPage={setPage} page={page} />
-      {loading ? (
-        <h2>Cargando......</h2>
-      ) : (
-        characters.map((character) => (
-          <Character key={character.id} character={character} />
-        ))
-      )}
-    </>
+      <div className="container">
+        <section className="grid-container">
+          {loading ? (
+            <h2>Cargando......</h2>
+          ) : (
+            characters.map((character) => (
+              <Character key={character.id} character={character} />
+            ))
+          )}
+        </section>
+      </div>
+    </div>
   );
 }
 

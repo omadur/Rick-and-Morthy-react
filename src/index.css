@@ -13,6 +13,76 @@ html {
 }
 
 main {
-    background-color: #324759;
-    width: 100wh;
+    background-color: #4B4952;
+}
+
+main h1 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.4rem;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    padding-bottom: 30px;
+
+}
+
+.nav-section span {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-section button {
+    background-color: #00E3CC;
+    border: 0;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1F2024;
+}
+
+.nav-section button:hover {
+    background-color: #63f5e6;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #1F2024;
+}
+
+.grid-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, auto);
+    gap: 2vh 1vw;
+}
+
+.container h2 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container img {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 80%;
 }
